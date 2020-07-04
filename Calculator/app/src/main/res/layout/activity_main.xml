@@ -8,15 +8,15 @@
     android:background="#BD5510"
     >
 
-    <TextView
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="RESULT"
         android:textSize="40dp"
         android:textAlignment="textEnd"
         android:background="@drawable/result_border"
         android:layout_marginTop="40dp"
         android:gravity="end"
+        android:id="@+id/Result"
         />
     <Button
         android:layout_width="80dp"
@@ -26,6 +26,7 @@
         android:layout_marginTop="165dp"
         android:layout_marginLeft="10dp"
         android:background="@drawable/round"
+        android:id="@+id/addition"
         />
     <Button
         android:layout_width="80dp"
@@ -35,6 +36,7 @@
         android:layout_marginTop="165dp"
         android:layout_marginLeft="115dp"
         android:background="@drawable/round"
+        android:id="@+id/substraction"
         />
     <Button
         android:layout_width="80dp"
@@ -44,6 +46,7 @@
         android:layout_marginTop="165dp"
         android:layout_marginLeft="225dp"
         android:background="@drawable/round"
+        android:id="@+id/multiplication"
         />
     <Button
         android:layout_width="80dp"
@@ -53,6 +56,7 @@
         android:layout_marginTop="165dp"
         android:layout_marginLeft="330dp"
         android:background="@drawable/round"
+        android:id="@+id/division"
         />
 
     <Button
@@ -63,6 +67,7 @@
         android:layout_marginTop="275dp"
         android:layout_marginLeft="10dp"
         android:background="@drawable/round"
+        android:id="@+id/one"
         />
     <Button
         android:layout_width="80dp"
@@ -72,6 +77,7 @@
         android:layout_marginTop="275dp"
         android:layout_marginLeft="170dp"
         android:background="@drawable/round"
+        android:id="@+id/two"
         />
     <Button
         android:layout_width="80dp"
@@ -81,6 +87,7 @@
         android:layout_marginTop="275dp"
         android:layout_marginLeft="320dp"
         android:background="@drawable/round"
+        android:id="@+id/three"
         />
     <Button
         android:layout_width="80dp"
@@ -90,6 +97,7 @@
         android:layout_marginTop="380dp"
         android:layout_marginLeft="10dp"
         android:background="@drawable/round"
+        android:id="@+id/four"
         />
     <Button
         android:layout_width="80dp"
@@ -99,6 +107,7 @@
         android:layout_marginTop="380dp"
         android:layout_marginLeft="170dp"
         android:background="@drawable/round"
+        android:id="@+id/five"
         />
     <Button
         android:layout_width="80dp"
@@ -108,6 +117,7 @@
         android:layout_marginTop="380dp"
         android:layout_marginLeft="320dp"
         android:background="@drawable/round"
+        android:id="@+id/six"
         />
 
     <Button
@@ -117,7 +127,9 @@
         android:layout_marginTop="490dp"
         android:background="@drawable/round"
         android:text="7"
-        android:textSize="32dp" />
+        android:textSize="32dp"
+        android:id="@+id/seven"
+        />
 
     <Button
         android:layout_width="80dp"
@@ -126,7 +138,9 @@
         android:layout_marginTop="490dp"
         android:background="@drawable/round"
         android:text="8"
-        android:textSize="32dp" />
+        android:textSize="32dp"
+        android:id="@+id/eight"
+        />
 
     <Button
         android:layout_width="80dp"
@@ -136,6 +150,7 @@
         android:layout_marginTop="490dp"
         android:layout_marginLeft="320dp"
         android:background="@drawable/round"
+        android:id="@+id/nine"
         />
 
     <Button
@@ -145,7 +160,9 @@
         android:layout_marginTop="600dp"
         android:background="@drawable/rectangle"
         android:text="0"
-        android:textSize="32dp" />
+        android:textSize="32dp"
+        android:id="@+id/zero"
+        />
 
     <Button
         android:layout_width="80dp"
@@ -155,6 +172,7 @@
         android:layout_marginTop="600dp"
         android:layout_marginLeft="300dp"
         android:background="@drawable/round"
+        android:id="@+id/equals"
         />
 
 </RelativeLayout>
