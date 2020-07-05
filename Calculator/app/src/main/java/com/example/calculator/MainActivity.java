@@ -4,13 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.text.Editable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
     Button addition,subtraction,multiplication,division,button1,button2,button3,button4
-            ,button5,button6,button7,button8,button9,button0,buttonEquals;
+            ,button5,button6,button7,button8,button9,button0,buttonEquals,buttonDot,buttonCancel;
     EditText resultBar;
     float LValue,RValue;
     boolean enableAddition,enableSubtraction,enableMultiplication,enableDivision;
@@ -34,7 +35,25 @@ public class MainActivity extends AppCompatActivity {
         button8=findViewById(R.id.eight);
         button9=findViewById(R.id.nine);
         buttonEquals=findViewById(R.id.equals);
+        buttonDot=findViewById(R.id.dot);
+        buttonCancel=findViewById(R.id.cancel);
         ///////////////////////////////////////////////
+        buttonCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String str=null;
+                if((resultBar.getText()!=null) && resultBar.getText().length()>0)
+                    str = (resultBar.getText().toString()).substring(0, resultBar.getText().length() - 1);
+                resultBar.setText(str);
+            }
+        });
+        buttonDot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                resultBar.setText(resultBar.getText() + ".");
+                buttonDot.setEnabled(false);
+            }
+        });
         button0.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
