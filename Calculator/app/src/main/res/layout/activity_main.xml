@@ -125,6 +125,16 @@
         android:background="@drawable/round"
         android:id="@+id/six"
         />
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="C"
+        android:textSize="32dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="330dp"
+        android:background="@drawable/round"
+        android:id="@+id/cancel"
+        />
 
     <Button
         android:layout_width="80dp"
@@ -161,12 +171,12 @@
     <Button
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:text="C"
+        android:text="B"
         android:textSize="32dp"
         android:layout_marginTop="490dp"
         android:layout_marginLeft="330dp"
         android:background="@drawable/round"
-        android:id="@+id/cancel"
+        android:id="@+id/backSpace"
         />
 
     <Button
@@ -193,7 +203,7 @@
     <Button
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:text="->"
+        android:text="="
         android:textSize="32dp"
         android:layout_marginTop="600dp"
         android:layout_marginLeft="330dp"
