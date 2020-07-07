@@ -10,13 +10,14 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
     Button addition,subtraction,multiplication,division,button1,button2,button3,button4
             ,button5,button6,button7,button8,button9,button0,buttonEquals,buttonDot, buttonBackSpace,buttonCancel;
-    EditText resultBar;
+    EditText resultBar,back;
     float LValue,RValue;
     boolean enableAddition,enableSubtraction,enableMultiplication,enableDivision;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        back=findViewById(R.id.back);
         resultBar=findViewById(R.id.Result);
         addition=findViewById(R.id.addition);
         subtraction=findViewById(R.id.substraction);
@@ -37,6 +38,14 @@ public class MainActivity extends AppCompatActivity {
         buttonBackSpace =findViewById(R.id.backSpace);
         buttonCancel=findViewById(R.id.cancel);
         ///////////////////////////////////////////////
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(enableDivision || enableMultiplication || enableSubtraction || enableAddition){
+                    back.setText(""+LValue);
+                }
+            }
+        });
         buttonCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
